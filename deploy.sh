@@ -1,7 +1,7 @@
   
 echo "clean previous build"
 
-rm -rf build/
+rm -rf dist/
 
 echo "Installing packages"
 
@@ -11,9 +11,8 @@ npm run build
 echo "Prepearing build..."
 
 rm -rf src/
-rm -rf public/
 
-mv build/* .
+mv dist/* .
 
 echo "Deploing..."
 
