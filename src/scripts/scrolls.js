@@ -1,6 +1,6 @@
 document.getElementById("banner-scroll").addEventListener("click", () => {
   document
-    .getElementById("intro")
+    .querySelector(".intro")
     .scrollIntoView({ block: "center", behavior: "smooth" });
 });
 

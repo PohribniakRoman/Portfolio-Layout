@@ -1,13 +1,22 @@
 //fonts
 
 @import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
-//font-family: 'Raleway', sans-serif;
+// font-family: 'Raleway', sans-serif;
+
+@import url('https://fonts.googleapis.com/css2?family=Merienda:wght@400;700&display=swap');
+// font-family: 'Merienda', cursive;
 
 //import files
 
 @import "reset";
 @import "baner";
+@import "nav";
 @import "intro";
+@import "contacts";
+@import "footer";
+@import "skils";
+@import "hire";
+@import "works";
 
 //styles
 
@@ -34,4 +43,18 @@
     color: #fff;
     font-size: 15px;
     line-height: 30px;
+}
+.container{
+    width: 1140px;
+    margin: 0 auto;
+}
+body{
+    background: #f5f5f5;
+}
+a{
+    color: unset;
+    text-decoration: none;
+}
+*{
+    user-select: none;
 }
