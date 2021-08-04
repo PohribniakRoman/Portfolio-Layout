@@ -1,0 +1,32 @@
+.testimonials {
+    min-height: 600px;
+    padding-bottom: 150px;
+    overflow: hidden;
+    text-align: center; }
+    .testimonials__title {
+      font-weight: 900;
+      font-size: 30px;
+      margin: 0 0 30px;
+      letter-spacing: 5px;
+      margin-top: 120px;
+      margin-bottom: 70px;
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-transform: uppercase; }
+      .testimonials__title::before {
+        content: "";
+        width: 10%;
+        height: 1px;
+        position: absolute;
+        background: rgba(135, 135, 135, 0.5);
+        margin-top: 100px; }
+    .testimonials__subtitle {
+      width: 50%;
+      margin: 0 auto;
+      font-style: italic;
+      font-style: normal;
+      font-size: 16px;
+      line-height: 30px;
+      margin-bottom: 60px; }
