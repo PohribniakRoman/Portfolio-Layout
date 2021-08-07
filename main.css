@@ -1,0 +1,735 @@
+@import url(https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Merienda:wght@400;700&display=swap);
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after {
+  content: '';
+  content: none; }
+
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+.banner {
+  height: 100vh;
+  min-height: 600px;
+  background-image: url(c69df89b7f8d684657c5b9eea1c610c2.jpg);
+  background-position: 50% 0;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  position: relative; }
+  .banner__container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: rgba(44, 62, 80, 0.3);
+    background-image: url("https://scripteden.com/previews/Clean/assets/images/pattern.png");
+    background-repeat: repeat;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    color: #fff;
+    top: 0;
+    width: 100%; }
+    .banner__container h3 {
+      font-size: 0.8vw; }
+    .banner__container h1 {
+      margin: 1.6vw;
+      font-size: 2.3vw;
+      letter-spacing: 0.4vw;
+      font-weight: 900;
+      position: relative;
+      display: flex;
+      justify-content: center; }
+      .banner__container h1::before {
+        bottom: 100%; }
+      .banner__container h1::after {
+        top: 100%; }
+      .banner__container h1::before, .banner__container h1::after {
+        width: 100%;
+        content: "";
+        position: absolute;
+        height: 1px;
+        background-color: #fff; }
+  .banner__control {
+    position: absolute;
+    bottom: 5%;
+    cursor: pointer;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50px;
+    overflow: hidden;
+    height: 50px;
+    background-color: unset;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    outline: none; }
+    .banner__control span {
+      color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 20px;
+      width: 100%;
+      height: 100%;
+      transition: .3s;
+      animation: 1s linear infinite fall; }
+
+@keyframes fall {
+  0% {
+    margin-top: -25px;
+    padding-top: -25px;
+    opacity: 0.3; }
+  50% {
+    opacity: 1; }
+  100% {
+    margin-top: 0px;
+    opacity: 0;
+    padding-top: 25px; } }
+
+.nav {
+  display: flex;
+  align-items: center;
+  min-height: 50px;
+  justify-content: space-between;
+  position: sticky;
+  top: 0px;
+  z-index: 100;
+  width: 1140px; }
+  .nav::before {
+    content: "";
+    width: 1000vw;
+    transform: translateX(-50%);
+    height: 100%;
+    z-index: 0;
+    background: #fff;
+    position: absolute; }
+  .nav__logo {
+    font-family: "Merienda", cursive !important;
+    font-weight: bold;
+    font-size: 22px;
+    z-index: 100; }
+  .nav__menu {
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    background: #fff;
+    justify-content: center; }
+    .nav__menu--item {
+      font-size: 11px;
+      text-transform: uppercase;
+      outline: none;
+      letter-spacing: 3px;
+      color: #222;
+      font-weight: bold;
+      cursor: pointer;
+      margin: 15px;
+      padding: 5px; }
+    .nav__menu .active {
+      color: #e7746f; }
+
+.fixed {
+  position: fixed; }
+
+.intro {
+  min-height: 600px;
+  overflow: hidden;
+  text-align: center; }
+  .intro__title {
+    font-weight: 900;
+    font-size: 30px;
+    margin: 0 0 30px;
+    letter-spacing: 5px;
+    margin-top: 120px;
+    margin-bottom: 70px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+    .intro__title::before {
+      content: "";
+      width: 10%;
+      height: 1px;
+      position: absolute;
+      background: rgba(135, 135, 135, 0.5);
+      margin-top: 100px; }
+  .intro__subtitle {
+    width: 60%;
+    margin: 0 auto;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 30px;
+    margin-bottom: 60px; }
+  .intro__list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 2vw;
+    width: 95%;
+    padding-bottom: 150px;
+    margin: 0 auto; }
+    .intro__list--item {
+      height: 258px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      background-color: #fff;
+      -webkit-box-shadow: 17px 17px 51px -6px rgba(34, 60, 80, 0.35);
+      -moz-box-shadow: 17px 17px 51px -6px rgba(34, 60, 80, 0.35);
+      box-shadow: 17px 17px 51px -6px rgba(34, 60, 80, 0.35); }
+      .intro__list--item span {
+        font-size: 40px;
+        color: #000;
+        line-height: 57px; }
+      .intro__list--item h1 {
+        text-transform: uppercase;
+        font-size: 15px;
+        letter-spacing: 2px;
+        font-weight: bold;
+        color: #222;
+        margin-bottom: 25px;
+        text-transform: uppercase; }
+      .intro__list--item p {
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 25px;
+        width: 80%;
+        color: #666;
+        margin: 0 auto; }
+
+.contacts {
+  min-height: 600px;
+  overflow: hidden;
+  text-align: center;
+  background-color: #fff; }
+  .contacts__title {
+    font-weight: 900;
+    font-size: 30px;
+    margin: 0 0 30px;
+    letter-spacing: 5px;
+    margin-top: 120px;
+    margin-bottom: 70px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+    .contacts__title::before {
+      content: "";
+      width: 10%;
+      height: 1px;
+      position: absolute;
+      background: rgba(135, 135, 135, 0.5);
+      margin-top: 100px; }
+  .contacts__subtitle {
+    width: 50%;
+    margin: 0 auto;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 30px;
+    margin-bottom: 60px; }
+  .contacts__form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 150px;
+    justify-content: center; }
+    .contacts__form--field {
+      outline: none;
+      background: #fff;
+      border: 1px solid #d8e1e4;
+      font-size: 12px;
+      width: 50%;
+      margin: 5px;
+      font-weight: 500;
+      transition: 0.3s;
+      color: #555;
+      padding: 10px 15px; }
+      .contacts__form--field:focus {
+        border-color: rgba(135, 135, 135, 0.7); }
+    .contacts__form--btn {
+      outline: none;
+      margin-top: 20px;
+      padding: 10px 30px;
+      width: 53%;
+      font-size: 13px;
+      background: rgba(17, 17, 17, 0.8);
+      color: #fff;
+      text-transform: uppercase;
+      font-weight: 500;
+      border: none;
+      letter-spacing: 1px;
+      border-radius: 4px; }
+    .contacts__form--textarea {
+      resize: none;
+      padding: 10px 15px;
+      width: 50%;
+      outline: none;
+      background: #fff;
+      border: 1px solid #d8e1e4;
+      font-size: 12px; }
+      .contacts__form--textarea:focus {
+        border-color: rgba(135, 135, 135, 0.7); }
+
+.footer {
+  background: #222;
+  text-align: center;
+  padding: 60px 0;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column; }
+  .footer__links {
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+    .footer__links--item {
+      margin: 5px;
+      display: flex;
+      align-items: center;
+      font-size: 16px;
+      padding: 10px;
+      justify-content: center;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      border-radius: 3px;
+      cursor: pointer;
+      color: rgba(255, 255, 255, 0.2);
+      transition: 0.3s; }
+      .footer__links--item:hover {
+        border: 1px solid rgba(255, 255, 255, 0.5);
+        color: rgba(255, 255, 255, 0.8); }
+  .footer__title {
+    margin: 30px;
+    font-size: 14px;
+    font-weight: 500; }
+  .footer__subtitle {
+    font-size: 14px;
+    font-weight: 500; }
+    .footer__subtitle a {
+      color: #e7746f;
+      border-bottom: 1px dotted #fff; }
+
+.skills {
+  min-height: 600px;
+  overflow: hidden;
+  text-align: center; }
+
+.skills__title {
+  font-weight: 900;
+  font-size: 30px;
+  margin: 0 0 30px;
+  letter-spacing: 5px;
+  margin-top: 120px;
+  margin-bottom: 70px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase; }
+
+.skills__title::before {
+  content: "";
+  width: 10%;
+  height: 1px;
+  position: absolute;
+  background: rgba(135, 135, 135, 0.5);
+  margin-top: 100px; }
+
+.skills__subtitle {
+  width: 50%;
+  margin: 0 auto;
+  font-style: italic;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 30px;
+  margin-bottom: 60px; }
+
+.skills__list {
+  padding-bottom: 30px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap; }
+
+.skills__list--item {
+  display: flex;
+  align-items: center;
+  position: relative;
+  flex-direction: column;
+  justify-content: center; }
+
+.skills__list--item canvas {
+  transform: rotate(-90deg);
+  width: 140px;
+  height: 140px; }
+
+.skills__list--item span {
+  position: absolute;
+  font-size: 25px;
+  color: #666;
+  font-weight: 500;
+  font-family: "Source Sans Pro", sans-serif !important; }
+
+.skills__list--item span i {
+  font-size: 50%; }
+
+.skills__list--item h3 {
+  top: 115%;
+  position: absolute;
+  letter-spacing: 1px;
+  font-weight: bold;
+  color: #222;
+  text-transform: uppercase; }
+
+.hire {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+  background-position: top;
+  color: #fff;
+  flex-direction: column;
+  background-image: url(https://scripteden.com/previews/Clean/assets/images/item-3.jpg);
+  padding: 50px 0; }
+  .hire__title {
+    font-size: 20px;
+    letter-spacing: 1px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    text-transform: uppercase; }
+  .hire__subtitle {
+    padding-top: 30px;
+    padding-bottom: 40px;
+    font-size: 20px;
+    font-weight: 600; }
+  .hire__btn {
+    background: rgba(255, 255, 255, 0.8);
+    color: #111;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding: 10px 25px;
+    font-size: 13px;
+    letter-spacing: 0.5px;
+    font-weight: 500;
+    border: none;
+    text-transform: uppercase;
+    border-radius: 3px;
+    transition: 0.3s;
+    cursor: pointer; }
+    .hire__btn:hover {
+      background-color: #fff; }
+
+.testimonials {
+  min-height: 600px;
+  overflow: hidden;
+  text-align: center; }
+  .testimonials__slider {
+    padding-bottom: 300px;
+    position: relative; }
+    .testimonials__slider .none {
+      transform: scale(0); }
+    .testimonials__slider--item {
+      position: absolute;
+      transform: scale(1);
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      text-align: left;
+      margin-top: 100px; }
+      .testimonials__slider--item::before, .testimonials__slider--item::after {
+        position: absolute;
+        width: var(--width);
+        height: 1px;
+        background-color: #ff5252;
+        left: 0; }
+      .testimonials__slider--item::before {
+        content: "";
+        top: -20px; }
+      .testimonials__slider--item-info {
+        font-size: 1.2vw;
+        color: #888;
+        font-weight: 300;
+        margin: 20px 0 30px;
+        font-family: sans-serif !important; }
+      .testimonials__slider--item-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 70%; }
+      .testimonials__slider--item-img {
+        width: 20%;
+        height: 150px;
+        background-image: url(https://scripteden.com/previews/Clean/assets/images/client-2.jpg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat; }
+      .testimonials__slider--item-author {
+        font-size: 1vw;
+        line-height: 1.42857143;
+        color: #777;
+        display: flex;
+        align-items: center;
+        position: relative; }
+        .testimonials__slider--item-author::before {
+          left: -15px;
+          content: "";
+          position: absolute;
+          width: 12px;
+          height: 1px;
+          background-color: #777; }
+
+.testimonials__title {
+  font-weight: 900;
+  font-size: 30px;
+  margin: 0 0 30px;
+  letter-spacing: 5px;
+  margin-top: 120px;
+  margin-bottom: 70px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase; }
+
+.testimonials__title::before {
+  content: "";
+  width: 10%;
+  height: 1px;
+  position: absolute;
+  background: rgba(135, 135, 135, 0.5);
+  margin-top: 100px; }
+
+.testimonials__subtitle {
+  width: 50%;
+  margin: 0 auto;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 30px;
+  margin-bottom: 60px; }
+
+.works {
+  min-height: 600px;
+  overflow: hidden;
+  background-color: #fff;
+  text-align: center; }
+  .works__title {
+    padding-top: 100px;
+    font-weight: 900;
+    font-size: 30px;
+    margin: 0 0 30px;
+    letter-spacing: 5px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 70px; }
+    .works__title::before {
+      content: "";
+      width: 10%;
+      height: 1px;
+      position: absolute;
+      background: rgba(135, 135, 135, 0.5);
+      margin-top: 100px; }
+  .works__subtitle {
+    width: 60%;
+    margin: 0 auto;
+    font-style: italic;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 30px; }
+  .works__gallery {
+    margin-top: 60px;
+    padding-bottom: 150px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-gap: 2vw; }
+    .works__gallery--item {
+      cursor: pointer;
+      height: 225px;
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-image: url(https://scripteden.com/previews/Clean/assets/images/item-1.jpg);
+      color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative; }
+      .works__gallery--item:hover h1 {
+        top: 35%; }
+      .works__gallery--item:hover p {
+        opacity: 1;
+        bottom: 35%; }
+      .works__gallery--item h1 {
+        transition: 0.5s;
+        font-size: 20px;
+        text-transform: uppercase;
+        letter-spacing: 5px;
+        position: absolute;
+        top: 25%; }
+        .works__gallery--item h1 span {
+          font-weight: 900; }
+      .works__gallery--item p {
+        position: absolute;
+        width: 60%;
+        bottom: 25%;
+        text-transform: uppercase;
+        font-size: 12px;
+        transition: 0.5s;
+        line-height: 16px;
+        letter-spacing: 1px;
+        font-weight: 600;
+        opacity: 0; }
+      .works__gallery--item:hover::before {
+        opacity: 0.6; }
+      .works__gallery--item::before {
+        content: "";
+        z-index: 0;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        left: 0;
+        transition: 0.5s;
+        top: 0;
+        background: #9e5406;
+        opacity: 0.4; }
+      .works__gallery--item:hover .works__gallery--item-border {
+        transform: scale(1); }
+      .works__gallery--item-border {
+        position: absolute;
+        transition: 0.5s;
+        background-color: #fff;
+        transform: scale(0); }
+      .works__gallery--item-border:nth-child(3) {
+        width: 80%;
+        height: 1px;
+        top: 15%;
+        left: 10%; }
+      .works__gallery--item-border:nth-child(4) {
+        bottom: 15%;
+        width: 80%;
+        height: 1px;
+        left: 10%; }
+      .works__gallery--item-border:nth-child(5) {
+        height: 70%;
+        top: 15%;
+        left: 10%;
+        width: 1px; }
+      .works__gallery--item-border:nth-child(6) {
+        height: 70%;
+        right: 10%;
+        top: 15%;
+        width: 1px; }
+
+@media (max-width: 760px) {
+  .nav {
+    background-color: #fff;
+    justify-content: center;
+    width: 100%; }
+    .nav__menu {
+      display: none; }
+  .intro__list {
+    grid-template-columns: 1fr 1fr; }
+  .works__gallery {
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 50px;
+    grid-template-columns: 1fr 1fr; }
+  .skills__list--item {
+    width: 50%;
+    margin-bottom: 60px; } }
+
+@media (max-width: 1160px) {
+  .nav {
+    width: 100% !important; }
+  .container {
+    width: 100% !important; } }
+
+@media (max-width: 600px) {
+  .banner__container h3 {
+    font-size: 10px; }
+  .banner__container h1 {
+    font-size: 20px; }
+  .intro__list {
+    grid-template-columns: 1fr; }
+  .works__gallery {
+    grid-template-columns: 1fr; }
+  .skills__list--item {
+    margin-bottom: 100px;
+    width: 100%; }
+  .testimonials__slider--item {
+    justify-content: center; }
+    .testimonials__slider--item::before {
+      top: 0; }
+    .testimonials__slider--item::after {
+      content: "";
+      bottom: 0; }
+  .testimonials__slider--item-author {
+    font-size: 10px; }
+  .testimonials__slider--item-info {
+    font-size: 12px; } }
+
+.contacts__form--btn {
+  cursor: pointer; }
+
+* {
+  font-family: "Raleway", sans-serif !important; }
+
+.none {
+  opacity: 0;
+  transition: 0.7s; }
+
+.scroll {
+  position: fixed;
+  right: 5%;
+  bottom: 5%;
+  border: none;
+  cursor: pointer;
+  background-color: rgba(135, 135, 135, 0.7);
+  width: 35px;
+  height: 35px;
+  border-radius: 4px;
+  text-align: center;
+  color: #fff;
+  font-size: 15px;
+  line-height: 30px; }
+
+.container {
+  width: 1140px;
+  margin: 0 auto; }
+
+body {
+  background: #f5f5f5; }
+
+a {
+  color: unset;
+  text-decoration: none; }
+
+* {
+  user-select: none; }
+
