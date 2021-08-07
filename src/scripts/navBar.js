@@ -15,6 +15,15 @@ document.querySelectorAll(".nav__menu--item").forEach((element) => {
 
 
 
+const heights = [0];
+const res = [];
+document.querySelectorAll("section").forEach((section, index) => {
+  res[index] = heights.reduce((acc, cur) => {
+    return acc + cur;
+  });
+
+  heights[index] = Number.parseInt(getComputedStyle(section).height);
+});
 
 
 function setColor(index) {
@@ -25,15 +34,6 @@ function setColor(index) {
 }
 
 window.addEventListener("scroll", () => {
-  const heights = [0];
-  const res = [];
-  document.querySelectorAll("section").forEach((section, index) => {
-    res[index] = heights.reduce((acc, cur) => {
-      return acc + cur;
-    });
-
-    heights[index] = Number.parseInt(getComputedStyle(section).height);
-  });
   const scroll = res.filter(
     (element) =>
       element - window.pageYOffset + document.documentElement.clientHeight / 2 >
