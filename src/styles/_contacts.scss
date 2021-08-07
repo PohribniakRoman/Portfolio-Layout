@@ -1,6 +1,5 @@
 .contacts {
     min-height: 600px;
-    padding-bottom: 150px;
     overflow: hidden;
     text-align: center;
     background-color: #fff;
@@ -27,7 +26,6 @@
     &__subtitle {
         width: 50%;
         margin: 0 auto;
-        font-style: italic;
         font-style: normal;
         font-size: 16px;
         line-height: 30px;
@@ -37,6 +35,7 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+        padding-bottom: 150px;
         justify-content: center;
         &--field {
             outline: none;
@@ -46,7 +45,7 @@
             width: 50%;
             margin: 5px;
             font-weight: 500;
-            transition: .3s;
+            transition: 0.3s;
             color: #555;
             padding: 10px 15px;
             &:focus {
@@ -56,7 +55,7 @@
         &--btn {
             outline: none;
             margin-top: 20px;
-            padding:10px 30px;
+            padding: 10px 30px;
             width: 53%;
             font-size: 13px;
             background: rgba(17, 17, 17, 0.8);

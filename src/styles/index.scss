@@ -3,7 +3,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 // font-family: 'Raleway', sans-serif;
 
-@import url('https://fonts.googleapis.com/css2?family=Merienda:wght@400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Merienda:wght@400;700&display=swap");
 // font-family: 'Merienda', cursive;
 
 //import files
@@ -14,23 +14,28 @@
 @import "intro";
 @import "contacts";
 @import "footer";
-@import "skils";
+@import "skills";
 @import "hire";
 @import "testimonials";
 @import "works";
+@import "adaptive";
+
+
+.contacts__form--btn{
+    cursor: pointer;
+}
 
 //styles
-
 
 * {
     font-family: "Raleway", sans-serif !important;
 }
 
-.none{
+.none {
     opacity: 0;
-    transition: .7s;
+    transition: 0.7s;
 }
-.scroll{
+.scroll {
     position: fixed;
     right: 5%;
     bottom: 5%;
@@ -45,17 +50,18 @@
     font-size: 15px;
     line-height: 30px;
 }
-.container{
+.container {
     width: 1140px;
     margin: 0 auto;
 }
-body{
+body {
     background: #f5f5f5;
 }
-a{
+a {
     color: unset;
     text-decoration: none;
 }
-*{
+* {
     user-select: none;
 }
+

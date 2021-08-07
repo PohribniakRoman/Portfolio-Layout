@@ -1,6 +1,5 @@
 .skills {
     min-height: 600px;
-    padding-bottom: 30px;
     overflow: hidden;
     text-align: center;
 }
@@ -25,7 +24,7 @@
     background: rgba(135, 135, 135, 0.5);
     margin-top: 100px;
 }
-.skills__subtitle {
+.skills__subtitle { 
     width: 50%;
     margin: 0 auto;
     font-style: italic;
@@ -35,6 +34,7 @@
     margin-bottom: 60px;
 }
 .skills__list {
+    padding-bottom: 30px;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -63,7 +63,7 @@
     font-size: 50%;
 }
 .skills__list--item h3 {
-    top: 130%;
+    top: 115%;
     position: absolute;
     letter-spacing: 1px;
     font-weight: bold;

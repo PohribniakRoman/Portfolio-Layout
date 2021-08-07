@@ -1,6 +1,5 @@
 .intro {
     min-height: 600px;
-    padding-bottom: 150px;
     overflow: hidden;
     text-align: center;
     &__title {
@@ -26,7 +25,6 @@
     &__subtitle {
         width: 60%;
         margin: 0 auto;
-        font-style: italic;
         font-style: normal;
         font-size: 16px;
         line-height: 30px;
@@ -38,6 +36,7 @@
         grid-template-columns: repeat(4, 1fr);
         grid-gap: 2vw;
         width: 95%;
+        padding-bottom: 150px;
         margin: 0 auto;
         &--item {
             height: 258px;
