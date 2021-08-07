@@ -10,6 +10,13 @@ document.querySelectorAll(".nav__menu--item").forEach((element) => {
   });
 });
 
+
+
+
+
+
+
+
 function setColor(index) {
   document.querySelectorAll(".nav__menu--item").forEach((item) => {
     item.classList.remove("active");
@@ -33,7 +40,6 @@ window.addEventListener("scroll", () => {
       0
   );
   setColor(res.indexOf(scroll[0]));
-  console.log(scroll[0],res,window.pageYOffset,document.documentElement.clientHeight / 2);
 });
 
 
